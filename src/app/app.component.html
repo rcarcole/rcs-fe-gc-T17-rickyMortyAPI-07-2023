@@ -1,0 +1,35 @@
+<nav>
+	<ul ngbNav #nav="ngbNav" class="nav-container">
+		<li [ngbNavItem]="1">
+			<button ngbNavLink (click)="setActiveNavItem(1)" [ngClass]="{'active': activeNavItem === 1}">
+				<a href="/home">Home</a>
+			</button>
+		</li>
+		<li [ngbNavItem]="2">
+			<button ngbNavLink (click)="setActiveNavItem(2)" [ngClass]="{'active': activeNavItem === 2}">
+				<a href="/home/characters">Characters</a>
+			</button>
+		</li>
+		<li [ngbNavItem]="3">
+			<button ngbNavLink (click)="setActiveNavItem(3)" [ngClass]="{'active': activeNavItem === 3}">
+				<a href="/home/about">About</a>
+			</button>
+		</li>
+		<li class="align-right">
+			<div class="mb-3 row">
+				<div class="col">
+					<input id="typeahead-config" type="text" class="form-control"  />
+				</div>
+				<button for="typeahead-config" class="col-xs-3 col-sm-auto col-form-label">Buscar</button>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+
+
+<div [ngbNavOutlet]="nav" class="mt-5"></div>
+
+
+
+<router-outlet></router-outlet>
