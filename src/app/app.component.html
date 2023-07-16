@@ -2,17 +2,17 @@
 	<ul ngbNav #nav="ngbNav" class="nav-container">
 		<li [ngbNavItem]="1">
 			<button ngbNavLink (click)="setActiveNavItem(1)" [ngClass]="{'active': activeNavItem === 1}">
-				<a href="/home">Home</a>
+				<a routerLink="/home">Home</a>
 			</button>
 		</li>
 		<li [ngbNavItem]="2">
 			<button ngbNavLink (click)="setActiveNavItem(2)" [ngClass]="{'active': activeNavItem === 2}">
-				<a href="/home/characters">Characters</a>
+				<a routerLink="/home/characters">Characters</a>
 			</button>
 		</li>
 		<li [ngbNavItem]="3">
 			<button ngbNavLink (click)="setActiveNavItem(3)" [ngClass]="{'active': activeNavItem === 3}">
-				<a href="/home/about">About</a>
+				<a routerLink="/home/about">About</a>
 			</button>
 		</li>
 		<li class="align-right">
