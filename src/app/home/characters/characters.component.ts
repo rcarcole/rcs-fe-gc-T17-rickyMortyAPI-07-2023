@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-// import * as database from '../../database.json';
+import { Component } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DetalleComponent } from '../detalle/detalle.component';
 import { CharactersServiceService } from './characters-service.service';
