@@ -15,7 +15,6 @@ export class CharactersComponent {
   characters : any = [];
   constructor(private modalService: NgbModal, private characterService: CharactersServiceService) {
     this.characterService.getAllCharacters().subscribe((data: any) => {
-      console.log(data.results);
       this.characters = data.results;
     });
   }

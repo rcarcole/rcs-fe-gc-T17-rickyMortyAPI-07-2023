@@ -1,22 +1,27 @@
 a {
     text-decoration: none;
-}
-
-nav {
+  }
+  
+  nav {
     background-color: #172029;
     color: white;
     padding: 1em;
-}
-
-.nav-item .active {
+  }
+  
+  .nav-item .active {
     text-decoration: underline;
-}
-
-.nav-container {
+  }
+  
+  .nav-container {
     display: flex;
     justify-content: space-between;
-}
-
-.align-right {
+  }
+  
+  .align-right {
     margin-left: auto;
-}
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
